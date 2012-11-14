@@ -31,6 +31,7 @@ USE_CAMERA_STUB := true
 # inherit from the proprietary version
 -include vendor/htc/primoc/BoardConfigVendor.mk
 
+TARGET_ARCH := arm
 TARGET_BOOTLOADER_BOARD_NAME := primoc
 
 BOARD_KERNEL_CMDLINE := no_console_suspend=1
