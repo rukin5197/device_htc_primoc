@@ -133,6 +133,9 @@ PRODUCT_COPY_FILES += \
 
 $(call inherit-product, build/target/product/full_base.mk)
 
+# Fix BCM4329 
+$(call inherit-product-if-exists, hardware/broadcom/wlan/bcmdhd/firmware/bcm4329/device-bcm.mk)
+
 # HTC Audio
 $(call inherit-product, device/htc/primoc/media_a1026.mk)
 $(call inherit-product, device/htc/primoc/media_htcaudio.mk)
